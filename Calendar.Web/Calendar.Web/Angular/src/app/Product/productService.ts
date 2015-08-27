@@ -17,9 +17,6 @@
         getProductResource(): ng.resource.IResourceClass<IProductResource> {
             return this.$resource("/api/products/:productId");
         }
-        getEventResource(): ng.resource.IResourceClass<IEventResource> {
-            return this.$resource("/api/events/:eventId");
-        }
     }
     angular
         .module("common.services")

@@ -1,19 +1,13 @@
-
-(function () {
-    'use strict';
-
-
-    // Create the module and define its dependencies.
+var app;
+(function (app_1) {
     var app = angular.module('app', ['ngRoute']);
-
-
-    // config always runs before the services are ready.
-    app.config(['$routeProvider', function($routeProvider) {
+    app.config(routeConfig);
+    routeConfig.$inject = ["$routeProvider"];
+    function routeConfig($routeProvider) {
         $routeProvider
             .when('/', { templateUrl: 'app/Expense/expense.html' })
+            .when('/product', { templateUrl: 'app/Product/productListView.html' })
             .when('/admin', { templateUrl: 'app/Admin/admin.html' })
             .otherwise({ redirectTo: '/' }); // go to the books route
     }
-    ]);
-
-})();
+})(app || (app = {}));
