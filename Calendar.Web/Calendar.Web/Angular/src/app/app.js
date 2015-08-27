@@ -1,13 +1,21 @@
 var app;
-(function (app_1) {
-    var app = angular.module('app', ['ngRoute']);
-    app.config(routeConfig);
+(function (app) {
+    var main = angular.module("productManagement", ["ngRoute",
+        "common.services",
+        "productResourceMock"]);
+    main.config(routeConfig);
     routeConfig.$inject = ["$routeProvider"];
     function routeConfig($routeProvider) {
         $routeProvider
-            .when('/', { templateUrl: 'app/Expense/expense.html' })
-            .when('/product', { templateUrl: 'app/Product/productListView.html' })
-            .when('/admin', { templateUrl: 'app/Admin/admin.html' })
-            .otherwise({ redirectTo: '/' }); // go to the books route
+            .when("/productList", {
+            templateUrl: "app/products/productListView.html",
+            controller: "ProductListCtrl as vm"
+        })
+            .when("/productDetail/:productId", {
+            templateUrl: "/app/products/productDetailView.html",
+            controller: "ProductDetailCtrl as vm"
+        })
+            .otherwise("/productList");
     }
 })(app || (app = {}));
+//# sourceMappingURL=app.js.map
