@@ -270,5 +270,5 @@ pip-log.txt
 src/app/**/*.js
 
 Calendar.Web/Calendar.Web/Angular/src/app/app.js
-Calendar.Web/Calendar.Web/Angular/src/app/Product/productListController.js
-Calendar.Web/Calendar.Web/Angular/src/app/Product/productService.js
+Calendar.Web/Calendar.Web/Angular/src/app/**/*.js
+Calendar.Web/Calendar.Web/Angular/src/app/app.js
