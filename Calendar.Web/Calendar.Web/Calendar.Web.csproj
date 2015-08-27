@@ -202,14 +202,11 @@
     <Content Include="Angular\spec\SpecHelper.js" />
     <Content Include="Angular\src\app\Admin\admin.html" />
     <Content Include="Angular\src\app\app.js" />
-    <Content Include="Angular\src\app\expensesDataService.js" />
+    <Content Include="Angular\src\app\Expense\expensesDataService.js" />
     <Content Include="Angular\src\app\Expense\expense.html" />
     <Content Include="Angular\src\app\Expense\expenseItem.js" />
     <Content Include="Angular\src\app\Expense\expensesController.js" />
     <Content Include="Angular\src\app\layout\topNav.html" />
-    <Content Include="Angular\src\Content\bootstrap.css" />
-    <Content Include="Angular\src\Content\bootstrap.min.css" />
-    <Content Include="Angular\src\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Angular\src\index.html" />
     <Content Include="Content\Scripts\angular-mocks.js" />
     <Content Include="Content\Scripts\angular-route.js" />
@@ -224,10 +221,6 @@
     <Content Include="Content\Site.css" />
     <Content Include="Content\Scripts\bootstrap.js" />
     <Content Include="Content\Scripts\bootstrap.min.js" />
-    <Content Include="Angular\src\Content\bootstrap.css.map" />
-    <Content Include="Angular\src\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Angular\src\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="Angular\src\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Content\Scripts\angular-route.min.js.map" />
     <Content Include="Content\Scripts\angular.min.js.map" />
     <Content Include="Angular\.idea\.name" />
