@@ -208,9 +208,11 @@
     <Content Include="Angular\src\app\Expense\expenseItem.js" />
     <Content Include="Angular\src\app\Expense\expensesController.js" />
     <Content Include="Angular\src\app\layout\topNav.html" />
-    <Content Include="Angular\src\app\Product\productListView.html" />
+    <Content Include="Angular\src\app\products\productDetailView.html" />
+    <Content Include="Angular\src\app\products\productListView.html" />
     <Content Include="Angular\src\index.html" />
     <Content Include="Content\Scripts\angular-mocks.js" />
+    <Content Include="Content\Scripts\angular-resource.js" />
     <Content Include="Content\Scripts\angular-route.js" />
     <Content Include="Content\Scripts\angular-route.min.js" />
     <Content Include="Content\Scripts\angular.js" />
@@ -272,10 +274,14 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Angular\src\app\app.ts" />
-    <TypeScriptCompile Include="Angular\src\app\Product\product.ts" />
-    <TypeScriptCompile Include="Angular\src\app\Product\productListController.ts" />
-    <TypeScriptCompile Include="Angular\src\app\Product\ProductResourceMock.ts" />
-    <TypeScriptCompile Include="Angular\src\app\Product\productService.ts" />
+    <TypeScriptCompile Include="Angular\src\app\common\services\common.services.ts" />
+    <TypeScriptCompile Include="Angular\src\app\common\services\dataAccessService.ts" />
+    <TypeScriptCompile Include="Angular\src\app\common\services\productResourceMock.ts" />
+    <TypeScriptCompile Include="Angular\src\app\products\product.ts" />
+    <TypeScriptCompile Include="Angular\src\app\products\productDetailCtrl.ts" />
+    <TypeScriptCompile Include="Angular\src\app\products\productListCtrl.ts" />
+    <TypeScriptCompile Include="Angular\src\app\products\ProductResourceMock.ts" />
+    <TypeScriptCompile Include="Angular\src\app\products\productService.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-mocks.d.ts" />

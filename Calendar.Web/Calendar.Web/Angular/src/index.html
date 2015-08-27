@@ -1,40 +1,45 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" ng-app="app">
-<head>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Acme Product Management</title>
 
-    <title>Expenses</title>
-
+    <!-- Style sheets -->
     <link href="../../Content/bootstrap.css" rel="stylesheet" />
-    <style>
-        body {
-            margin: 4em 0 0 1em;
-        }
-    </style>
 </head>
-<body>
 
-    <div ng-include="'app/layout/topNav.html'"></div>
-
-    <div>
-        <div ng-view></div>
+<body ng-app="productManagement">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand">Acme Product Management</div>
+            </div>
+        </div>
+    </nav> 
+    <div class="container">
+        <ng-view></ng-view>
     </div>
 
-
-    <!--vendor files-->
+    <!-- Library Scripts -->
     <script src="../../Content/Scripts/angular.js"></script>
-    <script src="../../Content/Scripts/angular-route.js"></script>
-
-    <!--My files-->
+    <script src="../../Content/Scripts/angular-resource.js"></script> 
+    <script src="../../Content/Scripts/angular-mocks.js"></script> 
+    <script src="../../Content/Scripts/angular-route.js"></script> 
+    
+    <!-- Application Script -->
     <script src="app/app.js"></script>
-    <script src="app/Expense/expenseItem.js"></script>
-    <script src="app/Expense/expensesController.js"></script>
-    <script src="app/Expense/expensesDataService.js"></script>
-
-
-    <script src="app/Product/product.js"></script> 
-    <script src="app/Product/productListController.js"></script>
-    <script src="app/Product/productResourceMock.js"></script>
-    <script src="app/Product/productService.js"></script> 
-
+    
+    <!-- Domain Classes -->
+    <script src="app/products/product.js"></script>
+    
+    <!-- Services -->
+    <script src="app/common/services/common.services.js"></script>
+    <script src="app/common/services/dataAccessService.js"></script>
+    <script src="app/common/services/productResourceMock.js"></script>
+    
+    <!-- Controllers -->
+    <script src="app/products/productListCtrl.js"></script>
+    <script src="app/products/productDetailCtrl.js"></script>
 </body>
+
 </html>
