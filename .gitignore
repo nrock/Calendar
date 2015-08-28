@@ -273,3 +273,5 @@ Calendar.Web/Calendar.Web/Angular/src/app/**/*.js
 Calendar.Web/Calendar.Web/Angular/src/app/common/services/*.js 
 Calendar.Web/Calendar.Web/Angular/src/app/app.js
 Calendar.Web/Calendar.Web/Angular/src/app/*/*.js
+Calendar.Web/Calendar.Web/Angular/src/app/**/*.js
+Calendar.Web/Calendar.Web/Angular/src/app/**/**.js 

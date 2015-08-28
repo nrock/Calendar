@@ -209,6 +209,7 @@
     <Content Include="Angular\src\app\Expense\expensesController.js" />
     <Content Include="Angular\src\app\layout\topNav.html" />
     <Content Include="Angular\src\app\Product\productListView.html" />
+    <Content Include="Angular\src\Expense.html" />
     <Content Include="Angular\src\Product.html" />
     <Content Include="Content\Scripts\angular-mocks.js" />
     <Content Include="Content\Scripts\angular-route.js" />
@@ -271,7 +272,8 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="Angular\src\app\app.ts" />
+    <TypeScriptCompile Include="Angular\src\app\Expense\app.ts" />
+    <TypeScriptCompile Include="Angular\src\app\Product\app.ts" />
     <TypeScriptCompile Include="Angular\src\app\Product\product.ts" />
     <TypeScriptCompile Include="Angular\src\app\Product\productListController.ts" />
     <TypeScriptCompile Include="Angular\src\app\Product\ProductResourceMock.ts" />

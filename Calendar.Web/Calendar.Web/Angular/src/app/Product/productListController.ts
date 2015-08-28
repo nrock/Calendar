@@ -28,7 +28,7 @@
         }
     }
     angular
-        .module("app")
+        .module("productManagement")
         .controller("ProductListController",
             ProductListCtrl);
 }
