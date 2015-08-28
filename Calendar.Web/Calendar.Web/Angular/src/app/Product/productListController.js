@@ -25,4 +25,3 @@ var app;
             .controller("ProductListController", ProductListCtrl);
     })(productList = app.productList || (app.productList = {}));
 })(app || (app = {}));
-//# sourceMappingURL=productListController.js.map

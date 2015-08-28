@@ -20,4 +20,3 @@ var app;
         domain.Product = Product;
     })(domain = app.domain || (app.domain = {}));
 })(app || (app = {}));
-//# sourceMappingURL=product.js.map
