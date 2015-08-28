@@ -276,8 +276,8 @@
     <TypeScriptCompile Include="Angular\src\app\Product\app.ts" />
     <TypeScriptCompile Include="Angular\src\app\Product\product.ts" />
     <TypeScriptCompile Include="Angular\src\app\Product\productListController.ts" />
-    <TypeScriptCompile Include="Angular\src\app\Product\ProductResourceMock.ts" />
-    <TypeScriptCompile Include="Angular\src\app\Product\productService.ts" />
+    <TypeScriptCompile Include="Angular\src\app\Product\Services\ProductResourceMock.ts" />
+    <TypeScriptCompile Include="Angular\src\app\Product\Services\productService.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-mocks.d.ts" />
