@@ -209,6 +209,7 @@
     <Content Include="Angular\src\app\Expense\expensesController.js" />
     <Content Include="Angular\src\app\layout\topNav.html" />
     <Content Include="Angular\src\app\Product\productListView.html" />
+    <Content Include="Angular\src\app\Product\Specs\productListController.spec.js" />
     <Content Include="Angular\src\Expense.html" />
     <Content Include="Angular\src\Product.html" />
     <Content Include="Content\Scripts\angular-mocks.js" />
