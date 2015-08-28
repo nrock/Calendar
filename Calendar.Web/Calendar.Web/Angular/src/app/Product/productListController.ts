@@ -11,13 +11,13 @@
         showImage: boolean;
         products: app.domain.IProduct[];
 
-        static $inject = ["dataAccessService"];
-        constructor(private dataAccessService: app.common.ProductService) {
+        static $inject = ["productService"];
+        constructor(private productService: app.common.ProductService) {
             this.title = "Product List";
             this.showImage = false;
             this.products = [];
 
-            var productResource = dataAccessService.getProductResource();
+            var productResource = productService.getProductResource();
             productResource.query((data: app.domain.IProduct[]) => {
                 this.products = data;
             });
@@ -28,7 +28,7 @@
         }
     }
     angular
-        .module("productManagement")
+        .module("app")
         .controller("ProductListController",
             ProductListCtrl);
 }

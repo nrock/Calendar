@@ -1,5 +1,5 @@
 ﻿module app {
-    var main = angular.module("productManagement",
+    var main = angular.module("app",
         ["ngRoute",
             "common.services",
             "productResourceMock"]);
@@ -12,12 +12,12 @@
         $routeProvider
             .when("/productList",
                 {
-                    templateUrl: "app/products/productListView.html",
-                    controller: "ProductListCtrl as vm"
+                    templateUrl: "app/product/productListView.html",
+                    controller: "ProductListController as vm"
                 })
             .when("/productDetail/:productId",
                 {
-                    templateUrl: "/app/products/productDetailView.html",
+                    templateUrl: "/app/product/productDetailView.html",
                     controller: "ProductDetailCtrl as vm"
                 })
             .otherwise("/productList");

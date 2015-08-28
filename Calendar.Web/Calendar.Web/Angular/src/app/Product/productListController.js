@@ -3,13 +3,13 @@ var app;
     var productList;
     (function (productList) {
         var ProductListCtrl = (function () {
-            function ProductListCtrl(dataAccessService) {
+            function ProductListCtrl(productService) {
                 var _this = this;
-                this.dataAccessService = dataAccessService;
+                this.productService = productService;
                 this.title = "Product List";
                 this.showImage = false;
                 this.products = [];
-                var productResource = dataAccessService.getProductResource();
+                var productResource = productService.getProductResource();
                 productResource.query(function (data) {
                     _this.products = data;
                 });
@@ -17,11 +17,11 @@ var app;
             ProductListCtrl.prototype.toggleImage = function () {
                 this.showImage = !this.showImage;
             };
-            ProductListCtrl.$inject = ["dataAccessService"];
+            ProductListCtrl.$inject = ["productService"];
             return ProductListCtrl;
         })();
         angular
-            .module("productManagement")
+            .module("app")
             .controller("ProductListController", ProductListCtrl);
     })(productList = app.productList || (app.productList = {}));
 })(app || (app = {}));
