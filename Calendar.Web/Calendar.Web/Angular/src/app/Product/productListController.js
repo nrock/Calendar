@@ -21,7 +21,7 @@ var app;
             return ProductListCtrl;
         })();
         angular
-            .module("app")
+            .module("productManagement")
             .controller("ProductListController", ProductListCtrl);
     })(productList = app.productList || (app.productList = {}));
 })(app || (app = {}));
