@@ -9,9 +9,6 @@ var app;
             ProductService.prototype.getProductResource = function () {
                 return this.$resource("/api/products/:productId");
             };
-            ProductService.prototype.getEventResource = function () {
-                return this.$resource("/api/events/:eventId");
-            };
             ProductService.$inject = ["$resource"];
             return ProductService;
         })();
@@ -21,3 +18,4 @@ var app;
             .service("productService", ProductService);
     })(common = app.common || (app.common = {}));
 })(app || (app = {}));
+//# sourceMappingURL=productService.js.map

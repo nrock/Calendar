@@ -11,3 +11,4 @@ var app;
             .otherwise({ redirectTo: '/' }); // go to the books route
     }
 })(app || (app = {}));
+//# sourceMappingURL=app.js.map
